@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="eng" data-ng-app="myMainAppModule">
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to BooKart</title>
+		<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/app.css">
+		<script src="https:/ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+		<script src="https:/ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div id="headerWrapper" data-ng-controller="HeaderCtrl">
+			<span class="logo pull-left">{{appDetails.title}}</span>
+			<span class="tagline pull-left">{{appDetails.tagline}}</span>
+			<div class="nav-wrapper pull-left">
+				<ul class="nav nav-pills">
+				<li class="active"><a href="#/books">Books</a></li>
+				<li><a href="#/kart">Kart</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-ng-view></div>
+	</body>
+</html>
